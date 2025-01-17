@@ -16,6 +16,9 @@ main > section{
 .display-flex{
     display: flex;
 }
+.text-primary{
+    color: #ff900e;
+}
 /* dark-02 */
 .text-gray{
     color: #424242;
@@ -102,21 +105,37 @@ main{
 .our-features{
     margin-left: 130px;
     max-width: 530px;
-    border: 1PX solid;
+    /* border: 1PX solid; */
 }
-.feature-title{
+.section-title{
     font-size: 2.8rem;
     font-weight: 700px;
-}
-#Quick list{
-    /* font-weight: 500; */
 }
 
 
 /* responsive media */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links{
+    .navbar, .nav-links, .teams{
         flex-direction: column;
     }
-    
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* problem */
+    /* .our-features{
+        margin-left: 20px;
+    }
+     */
 }
+/* medium size device */
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+}
+
