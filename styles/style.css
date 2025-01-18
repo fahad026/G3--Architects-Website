@@ -192,13 +192,16 @@ main{
 }
 /* footer section */
 .footer-description{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: rgb(66, 66, 66);
     padding-top:25px ;
     padding-bottom: 0px;
     
 }
 .footer-container{
-    
+    /* width: 1000px; */
     height: 60px;
     justify-items: center;
     background-color: rgb(255, 244, 231);
